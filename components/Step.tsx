@@ -6,8 +6,7 @@ export default function Step({
   children: React.ReactNode
 }) {
   return (
-    <li className="mx-4">
-      <input type="checkbox" id={title} className={`mr-2 peer`} />
+    <div className="mx-4">
       <label
         htmlFor={title}
         className={`text-lg text-foreground/90 peer-checked:line-through font-semibold hover:cursor-pointer`}
@@ -19,6 +18,6 @@ export default function Step({
       >
         {children}
       </div>
-    </li>
+    </div>
   )
 }
